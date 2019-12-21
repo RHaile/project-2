@@ -62,7 +62,7 @@ function init() {
   var selector = d3.select("#selDataset");
 
   // Use the list of sample names to populate the select options
-  d3.json("/factor").then((factorNames) => {
+  d3.json("/factors").then((factorNames) => {
     factorNames.forEach((factor) => {
       selector
         .append("option")
