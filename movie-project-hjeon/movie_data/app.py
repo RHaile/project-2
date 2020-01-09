@@ -137,7 +137,18 @@ def budget_data():
     }
     return jsonify(trace)
 
-
+@app.route('/data.html')
+def data():
+    return render_template('data.html')
+    
+@app.route('/movie_search.html')
+def movie_search():
+    return render_template('movie_search.html')
+    
+@app.route('/top10.html')
+def factors():
+    return render_template('top10.html')
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
